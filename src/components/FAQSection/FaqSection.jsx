@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import "./faqSection.css"
 import Accordion from './Accordion';
-import { FaqQuestions } from './faqQuestions';
+import { FaqQuestions } from "./FaqQuestions";
 
 function FaqSection({className}) {
 
