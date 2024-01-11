@@ -1,0 +1,88 @@
+
+.el { 
+    width: 100rem;
+    height: 35rem;
+    @apply mt-24 mx-32;
+    background-image: url("../../../public/DashboardImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.x {
+    animation: x 15s linear infinite alternate;
+    transform-origin: top left;
+}
+
+.x2 {
+    animation: x2 30s linear infinite alternate;
+    transform-origin: top right;
+}
+
+.x3 {
+    animation: x3 20s linear infinite alternate;
+    transform-origin: top left;
+}
+
+.x4 {
+    animation: x4 35s linear infinite alternate;
+    transform-origin: top right;
+}
+
+.x5 {
+    animation: x5 18s linear infinite alternate;
+    transform-origin: top left;
+}
+
+.x6 {
+    animation: x6 25s linear infinite alternate;
+    transform-origin: top right;
+}
+
+.y {
+    animation: y 15s linear infinite alternate;
+    transform-origin: bottom center;
+}
+
+@keyframes x {
+    100% {
+        transform: translateX(calc(100rem - 6rem));
+    }
+}
+
+@keyframes x2 {
+    100% {
+        transform: translateX(calc(50rem - 6rem));
+    }
+}
+
+@keyframes x3 {
+    100% {
+        transform: translateX(calc(70rem - 6rem));
+    }
+}
+
+@keyframes x4 {
+    100% {
+        transform: translateX(calc(90rem - 6rem));
+    }
+}
+
+@keyframes x5 {
+    100% {
+        transform: translateX(calc(80rem - 6rem));
+    }
+}
+
+@keyframes x6 {
+    100% {
+        transform: translateX(calc(75rem - 6rem));
+    }
+}
+
+@keyframes y {
+    100% {
+        transform: translateY(calc(25rem - 6rem));
+    }
+}

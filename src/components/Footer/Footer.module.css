@@ -1,0 +1,43 @@
+.footerLinks h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.footerLinks li {
+    list-style: none;
+    padding-top: .5rem;
+    font-size: 1.5rem;
+}
+
+#footer li a {
+    color: #FFF;
+}
+
+.footerLinks li a:hover,
+.legalLinks li a:hover {
+    text-decoration: underline;
+}
+
+.legalLinks {
+    padding: 2rem 3rem;
+    background: #281426;
+}
+
+.legalLinks>ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.legalLinks li {
+    list-style: none;
+    display: inline;
+    padding: 0 1.5rem;
+    font-size: 1.3rem;
+}
+
+.socialIcons {
+    @apply w-8 h-8 cursor-pointer hover:scale-105 ease-in-out duration-200
+}
