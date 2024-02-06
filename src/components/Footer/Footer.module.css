@@ -19,7 +19,7 @@
 }
 
 .legalLinks {
-    padding: 2rem 3rem;
+    padding: 1.5rem 2.5rem;
     background: #281426;
 }
 
@@ -39,5 +39,21 @@
 }
 
 .socialIcons {
-    @apply w-8 h-8 cursor-pointer hover:scale-105 ease-in-out duration-200
+    @apply w-8 h-8 cursor-pointer hover:scale-105 ease-in-out duration-200;
+}
+
+@media only screen and (max-width: 600px) {
+    .legalLinks {
+        background: transparent;
+        padding: .5rem;
+    }
+
+    .legalLinks>ul {
+        gap: 0;
+    }
+
+    .legalLinks li {
+        font-size: 1rem;
+        padding: 0 .5rem;
+    }
 }

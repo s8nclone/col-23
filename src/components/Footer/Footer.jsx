@@ -1,33 +1,36 @@
 import React from 'react'
-import Logo from '../Logo/Logo'
+import Logo from '../Logo'
 import styles from "./Footer.module.css"
 import { 
     FaInstagramSquare, 
     FaFacebookSquare, 
     FaLinkedin, 
-    FaYoutube,
     FaTwitterSquare
 } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer id="footer" className="bg-hero-pattern text-[#F9F5FF] bg-top bg-cover bg-no-repeat ">
-        <div className="flex justify-between py-24 px-32 ">
-            <div>
+        <div className="flex flex-col sm:flex-row gap-12 sm:gap-0 justify-between py-24 sm:px-32 ">
+            <div className="flex flex-col gap-4 mx-4 items-center w-2/5 sm:w-1/6">
                 <Logo className="flex flex-col text-3xl font-medium items-center " />
-                <div className="flex items-center gap-4  ">
-                <FaTwitterSquare className={styles.socialIcons} />
-                <FaYoutube className={styles.socialIcons} />
-                <FaFacebookSquare className={styles.socialIcons} />
-                <FaInstagramSquare className={styles.socialIcons} />
-                <FaLinkedin className={styles.socialIcons} />
+
+                <div className="flex flex-col gap-2 ">
+                    <h2 className="text-lg font-medium ">Follow our socials</h2>
+                    <div className="flex items-center gap-4  ">
+                        <FaInstagramSquare className={styles.socialIcons} />
+                        <FaLinkedin className={styles.socialIcons} />
+                        <FaFacebookSquare className={styles.socialIcons} />
+                        <FaTwitterSquare className={styles.socialIcons} />
+                    </div>
+                    
                 </div>
                 
             </div>
 
-            <div className="flex justify-between gap-28">
-                <div className={styles.footerLinks}>
-                    <h3>Learnify</h3>
+            <div className="flex flex-wrap mx-4 sm:mx-0 justify-between gap-12 sm:gap-28">
+                <div className={`${styles.footerLinks} w-2/5 sm:w-1/6 `}>
+                    <h3>Company</h3>
                     <ul>
                         <li><a href="#">About</a></li>
                         <li><a href="#">What we offer</a></li>
@@ -36,17 +39,8 @@ const Footer = () => {
                         <li><a href="#">Professional Certificate</a></li>
                     </ul>
                 </div>
-                <div className={styles.footerLinks}>
-                    <h3>Community</h3>
-                    <ul>
-                        <li><a href="#">Learners</a></li>
-                        <li><a href="#">Tech Blog</a></li>
-                        <li><a href="#">Partners</a></li>
-                        <li><a href="#">Affiliates</a></li>
-                        <li><a href="#">Become a Tutor</a></li>
-                    </ul>
-                </div>
-                <div className={styles.footerLinks}>
+
+                <div className={`${styles.footerLinks} w-2/5 sm:w-1/6 `}>
                     <h3>Support</h3>
                     <ul>
                         <li><a href="#">Contact us</a></li>
@@ -56,7 +50,19 @@ const Footer = () => {
                         <li><a href="#">Email</a></li>
                     </ul>
                 </div>
-                <div className={styles.footerLinks}>
+
+                <div className={`${styles.footerLinks} w-2/5 sm:w-1/6 `}>
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="#">Learners</a></li>
+                        <li><a href="#">Tech Blog</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                        <li><a href="#">Become a Tutor</a></li>
+                    </ul>
+                </div>
+                
+                <div className={`${styles.footerLinks} w-2/5 sm:w-1/6 `}>
                     <h3>More</h3>
                     <ul>
                         <li><a href="#">Press</a></li>
