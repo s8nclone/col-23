@@ -15,7 +15,7 @@ const HeroImage = () => {
             <Image 
                 src={user4}
                 alt="user"
-                className={` ${styles.y} w-24 h-24 `}
+                className={` ${styles.y} w-12 h-12 sm:w-24 sm:h-24 `}
             />
         </div>
 
@@ -23,7 +23,7 @@ const HeroImage = () => {
             <Image 
                 src={user2}
                 alt="user"
-                className={` ${styles.y} w-24 h-24`}
+                className={` ${styles.y} w-12 h-12 sm:w-24 sm:h-24`}
             />
         </div>
 
@@ -31,7 +31,7 @@ const HeroImage = () => {
             <Image 
                 src={user1}
                 alt="user"
-                className={` ${styles.y} w-24 h-24 `}
+                className={` ${styles.y} w-12 h-12 sm:w-24 sm:h-24 `}
             />
         </div>
         
@@ -39,7 +39,7 @@ const HeroImage = () => {
             <Image 
                 src={user5}
                 alt="user"
-                className={` ${styles.y} w-24 h-24`}
+                className={` ${styles.y} w-12 h-12 sm:w-24 sm:h-24`}
             />
         </div>
         
@@ -48,7 +48,7 @@ const HeroImage = () => {
             <Image 
                 src={user3}
                 alt="user"
-                className={` ${styles.y} w-24 h-24`}
+                className={` ${styles.y} w-12 h-12 sm:w-24 sm:h-24`}
             />
         </div>
         
@@ -56,7 +56,7 @@ const HeroImage = () => {
             <Image 
                 src={user1}
                 alt="user"
-                className={` ${styles.y} w-24 h-24`}
+                className={` ${styles.y} w-12 h-12 sm:w-24 sm:h-24`}
             />
         </div>
 

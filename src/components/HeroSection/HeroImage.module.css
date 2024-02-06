@@ -1,14 +1,15 @@
 
 .el { 
-    width: 100rem;
-    height: 35rem;
-    @apply mt-24 mx-32;
+    /* width: 30rem; */
+    height: 12rem;
+    @apply mt-24;
     background-image: url("../../../public/DashboardImage.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     overflow: hidden;
 }
+
 
 .x {
     animation: x 15s linear infinite alternate;
@@ -47,42 +48,93 @@
 
 @keyframes x {
     100% {
-        transform: translateX(calc(100rem - 6rem));
+        transform: translateX(calc(30rem - 3rem));
     }
 }
 
 @keyframes x2 {
     100% {
-        transform: translateX(calc(50rem - 6rem));
+        transform: translateX(calc(21rem - 3rem));
     }
 }
 
 @keyframes x3 {
     100% {
-        transform: translateX(calc(70rem - 6rem));
+        transform: translateX(calc(25rem - 3rem));
     }
 }
 
 @keyframes x4 {
     100% {
-        transform: translateX(calc(90rem - 6rem));
+        transform: translateX(calc(24rem - 3rem));
     }
 }
 
 @keyframes x5 {
     100% {
-        transform: translateX(calc(80rem - 6rem));
+        transform: translateX(calc(18rem - 3rem));
     }
 }
 
 @keyframes x6 {
     100% {
-        transform: translateX(calc(75rem - 6rem));
+        transform: translateX(calc(15rem - 3rem));
     }
 }
 
 @keyframes y {
     100% {
-        transform: translateY(calc(25rem - 6rem));
+        transform: translateY(calc(10rem - 3rem));
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    .el {
+        width: 100rem;
+        height: 35rem;
+        @apply mt-24 mx-32;
+    }
+
+    @keyframes x {
+        100% {
+            transform: translateX(calc(100rem - 6rem));
+        }
+    }
+    
+    @keyframes x2 {
+        100% {
+            transform: translateX(calc(50rem - 6rem));
+        }
+    }
+    
+    @keyframes x3 {
+        100% {
+            transform: translateX(calc(70rem - 6rem));
+        }
+    }
+    
+    @keyframes x4 {
+        100% {
+            transform: translateX(calc(90rem - 6rem));
+        }
+    }
+    
+    @keyframes x5 {
+        100% {
+            transform: translateX(calc(80rem - 6rem));
+        }
+    }
+    
+    @keyframes x6 {
+        100% {
+            transform: translateX(calc(75rem - 6rem));
+        }
+    }
+    
+    @keyframes y {
+        100% {
+            transform: translateY(calc(25rem - 6rem));
+        }
     }
 }
