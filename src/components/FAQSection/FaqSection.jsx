@@ -11,7 +11,7 @@ function FaqSection({className}) {
 
   return (
     <>
-        <div className={`accordion ${className} flex flex-col gap-8`}>
+        <div className={`accordion ${className} flex flex-col gap-8 shadow-xl rounded-2xl sm:rounded-none p-24 sm:m-0`}>
             <h1 className="faq-h1">Frequently asked questions</h1>
 
             <div>
