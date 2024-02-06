@@ -1,13 +1,15 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
 import Button from '../ButtonComponent/Button'
-import adobeXd  from "../../../public/AdobeXD.png"
-import chat from "../../../public/chat-image.png"
-import figma from "../../../public/FigmaLogo.png"
-import js from "../../../public/JavascriptLogo.png"
-import people from "../../../public/PeopleBuildingMetaverse.png"
-import react from "../../../public/ReactLogo.png"
-import wavesphere from "../../../public/WaveSphere.png"
+import adobeXd  from "/public/AdobeXd.png"
+import chat from "/public/chat-image.png"
+import figma from "/public/FigmaLogo.png"
+import js from "/public/JavascriptLogo.png"
+import people from "/public/PeopleBuildingMetaverse.png"
+import react from "/public/ReactLogo.png"
+import wavesphere from "/public/WaveSphere.png"
 
 const CollaborationTools = () => {
     return (
