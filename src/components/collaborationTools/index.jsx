@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Image from 'next/image'
-import adobeXd  from "/public/AdobeXD.png"
+import adobeXd  from "/public/AdobeXd.png"
 import chat from "/public/chat-image.png"
 import figma from "/public/FigmaLogo.png"
 import js from "/public/JavascriptLogo.png"
