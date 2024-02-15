@@ -1,26 +1,29 @@
-import React from 'react'
+import React from "react"
+import Link from "next/link";
 import { IoMdSearch } from "react-icons/io";
+import { usePathname } from "next/navigation";
 
 const NavItems = ({ classname, toggleSearch}) => {
+    const pathname = usePathname();
 
     return (
         <div className={`p-6 sm:w-[80%] sm:flex sm:justify-between ${classname}`}>
 
             <ul className="gap-16 w-full sm:items-center text-[#F9F5FF] sm:flex ">
-                <div className="border-b sm:border-b-0 py-2 mt-4 sm:mt-0">
-                    <li className="text-xl sm:text-2xl w-full flex justify-between sm:hover:underline cursor-pointer ">Features</li>
+                <div className={`${pathname === "#" ? "sm:border-b-2 " : ''} border-b sm:border-b-0 py-2 mt-4 sm:mt-0`}>
+                    <Link href={"#"} className="text-xl sm:text-2xl w-full flex justify-between sm:hover:underline cursor-pointer ">Features</Link>
                 </div>
 
-                <div className="border-b sm:border-b-0 py-2 mt-4 sm:mt-0">
-                    <li className="text-xl sm:text-2xl w-full flex justify-between sm:hover:underline cursor-pointer ">Download</li>
+                <div className={`${pathname === "#" ? "sm:border-b-2 " : ''} border-b sm:border-b-0 py-2 mt-4 sm:mt-0`}>
+                    <Link href={"#"} className="text-xl sm:text-2xl w-full flex justify-between sm:hover:underline cursor-pointer ">Download</Link>
                 </div>
 
-                {/* <div className="border-b sm:border-b-0 py-2 mt-4 sm:mt-0">
-                    <li className="text-xl sm:text-2xl w-full sm:hover:underline cursor-pointer ">Dashboard</li>
+                {/* <div className={`${pathname === "#" ? "sm:border-b-2 " : ''} border-b sm:border-b-0 py-2 mt-4 sm:mt-0`}>
+                    <Link href={"#"} className="text-xl sm:text-2xl w-full sm:hover:underline cursor-pointer ">Dashboard</Link>
                 </div> */}
 
-                <div className="sm:border-b-0 py-2 mt-4 sm:mt-0">
-                    <li className="text-xl sm:text-2xl w-full flex justify-between sm:hover:underline cursor-pointer ">Pricing</li>
+                <div className={`${pathname === "/pricing" ? "sm:border-b-2 " : ''} sm:border-b-0 py-2 mt-4 sm:mt-0`}>
+                    <Link href={"/pricing"} className="text-xl sm:text-2xl w-full flex justify-between sm:hover:underline cursor-pointer ">Pricing</Link>
                 </div>
             </ul>
 
