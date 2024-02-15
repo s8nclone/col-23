@@ -41,12 +41,12 @@ const CollaborationTools = () => {
                     className="h-20 w-20 sm:h-32 sm:w-32"
                 />
                 <Image 
-                    src={people}
+                    src={wavesphere}
                     alt="feature image"
                     className="h-20 w-20 sm:h-32 sm:w-32"
                 />
                 <Image 
-                    src={wavesphere}
+                    src={people}
                     alt="feature image"
                     className="h-20 w-20 sm:h-32 sm:w-32"
                 />
