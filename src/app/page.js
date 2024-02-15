@@ -7,7 +7,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <main>
+    <main className="bg-[#F6F5F5] ">
       <HeroSection />
       <PoolOfTalents />
       <FeatureSection />
