@@ -1,14 +1,8 @@
-"use client"
 
-import React, { useState } from 'react'
+import React from 'react'
 import { IoMdSearch } from "react-icons/io";
 
-const NavItems = ({ classname}) => {
-    const [openSearch, setOpenSearch] = useState(false)
-
-    const toggleSearch = () => {
-        setOpenSearch(!openSearch)
-    }
+const NavItems = ({ classname, toggleSearch}) => {
 
     return (
         <div className={`p-6 sm:w-[80%] sm:flex sm:justify-between ${classname}`}>
@@ -34,7 +28,7 @@ const NavItems = ({ classname}) => {
             <div className="flex flex-col-reverse sm:flex-row gap-4 sm:gap-12 items-center ">
                 <IoMdSearch 
                     className="text-[#F9F5FF] sm:h-10 sm:w-10 invisible sm:visible cursor-pointer " 
-                    // onClick={toggleSearch}
+                    onClick={toggleSearch}
                 />
                 
                 
