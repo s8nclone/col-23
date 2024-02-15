@@ -4,9 +4,9 @@ export default function Button({btnText}) {
   return (
     <div>
         <button 
-            className="rounded-lg flex justify-center items-center 
-                py-4 px-6 bg-transparent border border-[#5B0BC1] 
-                text-[#5B0BC1] min-w-[12rem] h-16 
+            className="rounded-xl flex justify-center items-center 
+                py-4 px-6 bg-transparent border sm:border-2 border-[#5B0BC1] 
+                text-[#5B0BC1] min-w-[12rem] 
                 sm:h-20 text-2xl font-medium "
         >
             {btnText}

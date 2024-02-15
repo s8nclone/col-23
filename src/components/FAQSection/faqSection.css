@@ -1,14 +1,12 @@
 .accordion {
-    margin: 0 auto;
+    margin: 2rem 1rem;
     min-height: 350px;
-    padding: 1rem 4rem;
     color: #3A3A3A;
 }
 
 .faq-h1 {
     text-align: center;
-    margin: 2rem auto;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -18,12 +16,13 @@
     justify-content: space-between;
     cursor: pointer;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
     
 }
 
 .active {
-    font-size: 2rem;
+    /* font-size: 2rem; */
     font-weight: bold;
 }
 
@@ -43,7 +42,7 @@
 
 .accordion-content {
     overflow: hidden;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     max-width: 80%;
 }
 

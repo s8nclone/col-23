@@ -11,7 +11,7 @@ function FaqSection({className}) {
 
   return (
     <>
-        <div className={`accordion ${className} flex flex-col gap-8 shadow-xl rounded-2xl sm:rounded-none p-24 sm:m-0`}>
+        <div className={`accordion ${className} bg-[#FFF] border border-[#EBEBEB] sm:border-0 flex flex-col gap-8 rounded-2xl py-16 px-4 sm:py-0 sm:rounded-none sm:m-0`}>
             <h1 className="faq-h1">Frequently asked questions</h1>
 
             <div>
@@ -27,7 +27,7 @@ function FaqSection({className}) {
                 ))}
             </div>
 
-            <p className="text-center"><a className="text-[#5B0BC1] text-2xl font-bold text-center underline ">Click here for more</a></p>
+            <p className="text-center"><a className="text-[#5B0BC1] text-lg sm:text-2xl font-medium text-center underline ">Click here for more</a></p>
         </div>
     </>
   );
