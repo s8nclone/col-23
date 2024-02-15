@@ -6,7 +6,7 @@
 .footerLinks li {
     list-style: none;
     padding-top: .5rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 #footer li a {
@@ -20,40 +20,38 @@
 
 .legalLinks {
     padding: 1.5rem 2.5rem;
-    background: #281426;
 }
 
 .legalLinks>ul {
     display: flex;
     width: 100%;
     justify-content: center;
-    gap: 2rem;
 
 }
 
 .legalLinks li {
     list-style: none;
     display: inline;
-    padding: 0 1.5rem;
-    font-size: 1.3rem;
+    padding: 0 .5rem;
+    font-size: 1rem;
 }
 
 .socialIcons {
     @apply w-8 h-8 cursor-pointer hover:scale-105 ease-in-out duration-200;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
+    .footerLinks li {
+        font-size: 1.5rem;
+    }
+
     .legalLinks {
         background: transparent;
         padding: .5rem;
     }
 
-    .legalLinks>ul {
-        gap: 0;
-    }
-
     .legalLinks li {
-        font-size: 1rem;
-        padding: 0 .5rem;
+        font-size: 1.2rem;
+        padding: 0 1.5rem;
     }
 }

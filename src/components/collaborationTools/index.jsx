@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import Button from '../ButtonComponent/Button'
 import adobeXd  from "/public/AdobeXD.png"
 import chat from "/public/chat-image.png"
 import figma from "/public/FigmaLogo.png"
@@ -11,8 +10,8 @@ import wavesphere from "/public/WaveSphere.png"
 
 const CollaborationTools = () => {
     return (
-        <section className="bg-[#DCD0EA] rounded-2xl sm:rounded-none m-6 sm:m-0 flex flex-col gap-8 text-center sm:px-32 py-12 px-6 justify-center items-center ">
-            <p className="text-2xl text-[#3A3A3A] font-bold">Start collaborating today</p>
+        <section className="bg-[#DCD0EA] rounded-2xl sm:rounded-none my-16 mx-4 sm:mx-0 sm:my-0 flex flex-col gap-8 text-center sm:px-32 py-12 px-6 justify-center items-center ">
+            <p className="text-3xl text-[#3A3A3A] font-bold">Start collaborating today</p>
             <div className="flex flex-wrap gap-x-16 sm:gap-x-32 sm:gap-y-12 gap-y-4 sm:px-64 items-center content-center justify-center  ">
                 <Image 
                     src={chat}
@@ -50,7 +49,14 @@ const CollaborationTools = () => {
                     className="h-20 w-20 sm:h-32 sm:w-32"
                 />
             </div>
-            <Button btnText="Get Started For Free" />
+
+            <button 
+                className="rounded-xl flex justify-center items-center 
+                    p-4 bg-[#7734CC] border sm:border-2 
+                    text-[#FFF] w-full sm:w-max text-lg sm:text-2xl font-medium "
+            >
+                Get Started for Free
+            </button>
         </section>
     )
 }

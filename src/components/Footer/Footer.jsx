@@ -12,11 +12,11 @@ const Footer = () => {
   return (
     <footer id="footer" className="bg-hero-pattern text-[#F9F5FF] bg-top bg-cover bg-no-repeat ">
         <div className="flex flex-col sm:flex-row gap-12 sm:gap-0 justify-between py-24 sm:px-32 ">
-            <div className="flex flex-col gap-4 mx-4 items-center w-2/5 sm:w-1/6">
-                <Logo className="flex flex-col text-3xl font-medium items-center " />
+            <div className="flex flex-col gap-4 mx-4 w-2/5 sm:w-1/6">
+                <Logo className="flex flex-col text-3xl font-medium items-center self-start gap-2 " />
 
-                <div className="flex flex-col gap-2 ">
-                    <h2 className="text-lg font-medium ">Follow our socials</h2>
+                <div className="flex flex-col gap-2 mt-4 ">
+                    <h2 className="text-xl font-medium ">Follow our socials</h2>
                     <div className="flex items-center gap-4  ">
                         <FaInstagramSquare className={styles.socialIcons} />
                         <FaLinkedin className={styles.socialIcons} />
